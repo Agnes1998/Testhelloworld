@@ -8,7 +8,9 @@ public class DeleteMiddleNode {
 	{
 		if (lList.size()%2 == 0 )
 		{
-			System.out.println("No middlenode present to bedin with");	
+			System.out.println("---------------------------------");
+			System.out.println("No middle node present to begin with");	
+			System.out.println("---------------------------------");
 			return lList;
 		}
 		else

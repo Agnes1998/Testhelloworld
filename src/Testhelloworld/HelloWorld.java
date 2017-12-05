@@ -51,6 +51,10 @@ public class HelloWorld {
 	    {
 	    	linked.addLast(a1[i]);    		    
 	    }	
+	    LinkedList <Character> linked1 =new LinkedList<>();
+	    LinkedList <Character> linked2 =new LinkedList<>();
+	    linked1 = linked;
+	    linked2 =linked;
 	    
 	    RemoveDupsFromUnsortedLinkedList RD1 = 	new RemoveDupsFromUnsortedLinkedList ();
 	    cleaned = RD1.cleanList(linked);
@@ -59,12 +63,12 @@ public class HelloWorld {
 	
 	    
 		RemoveDupsFromUnsortedLinkedListJ RDJ1 = new RemoveDupsFromUnsortedLinkedListJ();
-		cleaned = RDJ1.cleanList(linked);
+		cleaned = RDJ1.cleanList(linked1);
 		System.out.println("RemoveDups from linked list J " + s1);	
 		System.out.println("Linked List Content: " +cleaned.toString());
 		
 		LinkedListCleaningEasy EJ1 = new LinkedListCleaningEasy();
-		cleaned = EJ1.cleanList(linked);
+		cleaned = EJ1.cleanList(linked2);
 		System.out.println("RemoveDups from linked list J " + s1);	
 		System.out.println("Linked List Content: " +cleaned.toString());
 		
@@ -93,13 +97,36 @@ public class HelloWorld {
 		
 		LinkedList <Character> cleaned2 = new LinkedList<Character>();
 		DeleteMiddleNode DN1 = new DeleteMiddleNode();
+		linked.clear();
+		for (int i = 0 ; i< a1.length-1; i++)
+		{
+		    	linked.addLast(a1[i]);    		    
+		}	
+		linked2 = linked;
+		System.out.println("Linked list2 input size before adding: " + linked2.size());
+		linked2.add(('i'));
+		System.out.println("Linked list2 input sizeafter adding: " + linked2.size());
+		System.out.println("Linked list original  input size: " + linked.size());
 		
-		cleaned2 = DN1.deleteMiddleNode(linked);
-		//System.out.println("Remove middle element from linked list  " + s1);	
-		//System.out.println("Linked List Content: " + cleaned2.toString());
+		System.out.println("                  ***********             *********************                 ");
+		System.out.println("                  ***********Next example *********************                 ");
+		System.out.println("                  ***********             *********************                 ");
 		
+		System.out.println("Linked list input content: " + linked.toString());
+		System.out.println("Linked list input size: " + linked.size());
+		System.out.println("Remove middle element from linked list input " + s1.substring(0,s1.length()-1));
+		cleaned2 = DN1.deleteMiddleNode(linked);		
+		System.out.println("Remove middle element Linked List Content Result: " + cleaned2.toString());
 		
-	    
+		System.out.println("                  ***********             *********************                 ");
+		System.out.println("                  ***********Next example *********************                 ");
+		System.out.println("                  ***********             *********************                 ");
+		System.out.println("Remove middle element from linked list input " + linked2);
+		System.out.println("Linked list input size: " + linked2.size());
+		cleaned = DN1.deleteMiddleNode(linked2);		
+		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());
+	 
+		
 	}
 	
 }
