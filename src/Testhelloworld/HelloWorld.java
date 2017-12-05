@@ -102,14 +102,16 @@ public class HelloWorld {
 		{
 		    	linked.addLast(a1[i]);    		    
 		}	
-		linked2 = linked;
+		//linked2 = linked;  // this  is address only of the list
+		
+		linked2 =( LinkedList<Character>) linked.clone();
 		System.out.println("Linked list2 input size before adding: " + linked2.size());
 		linked2.add(('i'));
 		System.out.println("Linked list2 input sizeafter adding: " + linked2.size());
 		System.out.println("Linked list original  input size: " + linked.size());
 		
 		System.out.println("                  ***********             *********************                 ");
-		System.out.println("                  ***********Next example *********************                 ");
+		System.out.println("                               ");
 		System.out.println("                  ***********             *********************                 ");
 		
 		System.out.println("Linked list input content: " + linked.toString());
@@ -119,7 +121,7 @@ public class HelloWorld {
 		System.out.println("Remove middle element Linked List Content Result: " + cleaned2.toString());
 		
 		System.out.println("                  ***********             *********************                 ");
-		System.out.println("                  ***********Next example *********************                 ");
+		System.out.println("                                   ");
 		System.out.println("                  ***********             *********************                 ");
 		System.out.println("Remove middle element from linked list input " + linked2);
 		System.out.println("Linked list input size: " + linked2.size());
