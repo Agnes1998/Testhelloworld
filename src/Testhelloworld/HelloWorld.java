@@ -95,8 +95,8 @@ public class HelloWorld {
 		DeleteMiddleNode DN1 = new DeleteMiddleNode();
 		
 		cleaned2 = DN1.deleteMiddleNode(linked);
-		System.out.println("Remove middle element from linked list  " + s1);	
-		System.out.println("Linked List Content: " + cleaned2.toString());
+		//System.out.println("Remove middle element from linked list  " + s1);	
+		//System.out.println("Linked List Content: " + cleaned2.toString());
 		
 		
 	    
