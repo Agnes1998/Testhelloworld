@@ -9,7 +9,7 @@ public class HelloWorld {
 	
 	public static void main (String[] s)
 	{
-		/*System.out.println("Hello world!");
+		System.out.println("Hello world!");
 		 
 		IsUnique B1 = new IsUnique();
 		
@@ -127,7 +127,7 @@ public class HelloWorld {
 		System.out.println("Remove middle element from linked list input " + linked2);
 		System.out.println("Linked list input size: " + linked2.size());
 		cleaned = DN1.deleteMiddleNode(linked2);		
-		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());*/
+		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());
 	 
 		
 		System.out.println("");
@@ -149,7 +149,7 @@ public class HelloWorld {
 			System.out.println("Elements " + re.pop());
 		}
 		
-		Stack <Integer> st1 = new Stack <>();
+	/*	Stack <Integer> st1 = new Stack <>();
 		st1.push(9);
 		st1.push(77);
 		st1.push(643);
@@ -161,7 +161,7 @@ public class HelloWorld {
 		for ( int i = 1; i<10 ; i++)
 		{
 			System.out.println("Elements " + re1.pop());
-		}
+		}*/
 		}
 		
 	
