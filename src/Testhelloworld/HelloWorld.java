@@ -9,7 +9,7 @@ public class HelloWorld {
 	
 	public static void main (String[] s)
 	{
-		System.out.println("Hello world!");
+		/*System.out.println("Hello world!");
 		 
 		IsUnique B1 = new IsUnique();
 		
@@ -127,7 +127,7 @@ public class HelloWorld {
 		System.out.println("Remove middle element from linked list input " + linked2);
 		System.out.println("Linked list input size: " + linked2.size());
 		cleaned = DN1.deleteMiddleNode(linked2);		
-		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());
+		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());*/
 	 
 		
 		System.out.println("");
