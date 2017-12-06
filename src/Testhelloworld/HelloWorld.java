@@ -3,6 +3,7 @@ package Testhelloworld;
 
 
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class HelloWorld {
 	
@@ -104,10 +105,10 @@ public class HelloWorld {
 		}	
 		//linked2 = linked;  // this  is address only of the list
 		
-		linked2 =( LinkedList<Character>) linked.clone();
+		linked2 =(LinkedList<Character>) linked.clone();
 		System.out.println("Linked list2 input size before adding: " + linked2.size());
 		linked2.add(('i'));
-		System.out.println("Linked list2 input sizeafter adding: " + linked2.size());
+		System.out.println("Linked list2 input size after adding: " + linked2.size());
 		System.out.println("Linked list original  input size: " + linked.size());
 		
 		System.out.println("                  ***********             *********************                 ");
@@ -129,7 +130,41 @@ public class HelloWorld {
 		System.out.println("Remove middle element Linked List Content Result: " + cleaned.toString());
 	 
 		
-	}
+		System.out.println("");
+		Stacksorter SS = new Stacksorter();
+		Stack <Integer> st = new Stack <>();
+		st.push(9);
+		st.push(77);
+		st.push(643);
+		st.push(19);
+		st.push(7);
+		st.push(43);
+		st.push(1);
+		st.push(17);
+		st.push(4);
+		Stack <Integer> re = new Stack <>();
+		re = SS.sortStack(st);
+		for ( int i = 1; i<10 ; i++)
+		{
+			System.out.println("Elements " + re.pop());
+		}
+		
+		Stack <Integer> st1 = new Stack <>();
+		st1.push(9);
+		st1.push(77);
+		st1.push(643);
+		st1.push(19);
+		st1.push(7);
+	
+		Stack <Integer> re1 = new Stack <>();
+		re1 = SS.sortStack(st1);
+		for ( int i = 1; i<10 ; i++)
+		{
+			System.out.println("Elements " + re1.pop());
+		}
+		}
+		
+	
 	
 }
 
