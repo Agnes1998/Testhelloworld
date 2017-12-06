@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class Stacksorter {
 
+	
+	static  int numberOfSwitches =0;
 	public Stack<Integer>  sortStack ( Stack<Integer> st )
 	{
 		
@@ -100,8 +102,8 @@ public class Stacksorter {
 	    {                                               //j++;
 		 												//System.out.println( "Popping  element " + j + "  "  + source.peek()  );
 		 destination.push(source.pop());
-		
+		 numberOfSwitches++;
 	    }
-		 												//System.out.println( "-------------------------------------------Moved " + (j) + "  elements"  );
+		 System.out.println( " number of operations "+  numberOfSwitches	);											//System.out.println( "-------------------------------------------Moved " + (j) + "  elements"  );
 	}
 }

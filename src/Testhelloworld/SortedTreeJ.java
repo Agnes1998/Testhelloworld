@@ -10,6 +10,7 @@ public class SortedTreeJ {
 
 	        Stack<Integer> stack2 = new Stack<>();
 	        int i = 0;
+	        int k=0;
 	        boolean rep;
 
 	        do {
@@ -27,11 +28,12 @@ public class SortedTreeJ {
 	                }
 	            }
 	            stack1.push(max);
-                
+         
 	            while (!(stack2.empty())) {
 	                stack1.push(stack2.pop());
+	                k++;
 	            }
-	            if(rep)  { System.out.println("reloading stack for " + i++ + " time  "); }
+	            if(rep)  { System.out.println("reloading stack for " + ++i + " time  " + k + " operations so far" ); }
 	        } while (rep);
 	        return stack1;
 	 }
