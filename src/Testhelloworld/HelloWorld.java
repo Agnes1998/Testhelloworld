@@ -131,39 +131,35 @@ public class HelloWorld {
 	 
 		
 		System.out.println("");
-		Stacksorter SS = new Stacksorter();
+		
 		Stack <Integer> st = new Stack <>();
-		st.push(9);
-		st.push(77);
-		st.push(643);
-		st.push(19);
-		st.push(7);
-		st.push(43);
-		st.push(1);
-		st.push(17);
-		st.push(4);
+	    for (int i=0; i<20; i++)
+	    {
+            st.push((int)(Math.random()*1000));
+        }
+	    Stack <Integer> stJ = (Stack <Integer>) st.clone();
+	    
+		Stacksorter SS = new Stacksorter();
+		
 		Stack <Integer> re = new Stack <>();
 		re = SS.sortStack(st);
-		for ( int i = 1; i<10 ; i++)
+		for ( int i = 1; i<20 ; i++)
 		{
 			System.out.println("Elements " + re.pop());
 		}
-		
-	/*	Stack <Integer> st1 = new Stack <>();
-		st1.push(9);
-		st1.push(77);
-		st1.push(643);
-		st1.push(19);
-		st1.push(7);
-	
+
+		SortedTreeJ STJ = new SortedTreeJ();
 		Stack <Integer> re1 = new Stack <>();
-		re1 = SS.sortStack(st1);
-		for ( int i = 1; i<10 ; i++)
+		re1 = STJ.sortedTreeJ(stJ);
+		for ( int i = 1; i<20 ; i++)
 		{
 			System.out.println("Elements " + re1.pop());
-		}*/
 		}
 		
+		
+		
+	
+	}
 	
 	
 }
